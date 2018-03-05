@@ -16,9 +16,14 @@ class CrudProduto implements ICrudProduto
 	private $produto;
 
 	//Metodos
-	public function __construct(IProduto $produto, \PDO $db)
+	public function __construct(\PDO $db)
 	{
 		$this->db = $db;
+		
+	}
+
+
+	public function setProduto(IProduto $produto){
 		$this->produto = $produto;
 	}
 

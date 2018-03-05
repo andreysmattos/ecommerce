@@ -1,0 +1,8 @@
+[2018-02-26 04:22:24] CrudProduto.ERROR: Error no metodo find(), verifique o arquivo /opt/lampp/htdocs/!ecommerce t/App/classes/CrudProduto.phpna linha 57 error mensagem: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) [] []
+[2018-02-26 22:58:39] CrudProduto.ERROR: Error no metodo save(), verifique o erro: Array [] []
+[2018-02-26 22:58:53] CrudProduto.ERROR: Error no metodo save(), verifique o erro: Array [] []
+[2018-02-26 22:59:20] CrudProduto.ERROR: Error no metodo save(), verifique o erro:  [] []
+[2018-02-26 22:59:52] CrudProduto.ERROR: Error no metodo save(), verifique o erro:  [] []
+[2018-02-26 23:01:01] CrudProduto.ERROR: Error no metodo save(), verifique o erro: Column 'ativo' cannot be null [] []
+[2018-02-26 23:01:14] CrudProduto.ERROR: Error no metodo save(), verifique o erro: Column 'estoque' cannot be null [] []
+[2018-02-27 00:00:06] CrudProduto.ERROR: Error no metodo delete(), verifique o erro: Unknown column 'id' in 'where clause' [] []

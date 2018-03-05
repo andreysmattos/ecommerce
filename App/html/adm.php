@@ -16,20 +16,103 @@
     <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet" />
     <!-- custom CSS here -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- admin CSS -->
+    <link href="assets/css/admin.css" rel="stylesheet" />    
 </head>
-<body>
-    <!-- MENU esquerda --> 
-    <div class="row">
-        <div class="col-md-2">
-            <ul class="nav nav-pills nav-stacked">
-                 <li role="presentation" class="active"><a href="#">Home</a></li>
-                 <li role="presentation"><a href="#">Profile</a></li>
-                 <li role="presentation"><a href="#">Messages</a></li>
+<body class="adm">
+<nav>
+<div class="nav-side-menu">
+    <div class="brand">Brand Logo</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Principal
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                  <a href="#"><i class="fa fa-gift fa-lg"></i> Produtos <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="products">
+                    <li><a href="#">Listar</a></li>
+                    <li><a href="#">Adicionar</a></li>
+                    <li><a href="#">Promoção</a></li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Categorias <span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="service">
+                  <li><a href="#">Listar</a></li>
+                    <li><a href="#">Adicionar</a></li>
+                    <li><a href="#">Promoção</a></li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-car fa-lg"></i> Servidores <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="new">
+                  <li><a href="#">Listar</a></li>
+                  <li><a href="#">Adicionar</a></li>
+                  <li><a href="#">Promoção</a></li>
+                </ul>
+
+
+                 <li data-toggle="collapse" data-target="#fornecedores" class="collapsed">
+                  <a href="#"><i class="fa fa-car fa-lg"></i> Fornecedores <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="fornecedores">
+                  <li><a href="#">Listar</a></li>
+                  <li><a href="#">Adicionar</a></li>
+                  <li><a href="#">Promoção</a></li>
+                </ul>
+
+
+
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Clientes
+                  </a>
+                  </li>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Vendas
+                  </a>
+                </li>
             </ul>
-    </div>
-    </div>
+     </div>
+</div>
+</nav>
 
 
+
+<div class="container">
+    <div class="row">
+         <div class="col-md-3"> </div>
+         <div class="col-md-9"> 
+            <!-- FAZER OS INCLUDES AKI -->
+
+            <?php
+
+              include 'lista_produtos.php';
+            ?>
+
+
+
+
+
+          </div>
+         <div class="col-md-0"> </div>
+     </div>
+</div>
 
    
 

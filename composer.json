@@ -1,0 +1,19 @@
+{
+	"name":"ecommerce/tibia",
+	"require":{
+		"php": ">= 7.0",
+		"monolog/monolog": "1.23.0"
+	},
+	"authors": [
+		{
+			"name": "Andrey Mattos",
+            "email": "andreysmattos@hotmail.com"
+		}
+	],
+	"autoload":{
+		"psr-4":{
+			"App\\": "App/",
+			"Sistema\\": "vendor/sistema/"			
+		}
+	}
+}
