@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
+                            <img src="<?php echo ASSET;?>img/dummyimg.png" alt="" />
                             <div class="caption">
                                 <h3><a href="#">Samsung Galaxy </a></h3>
                                 <p>Price : <strong>$ 3,45,900</strong>  </p>
@@ -43,7 +43,7 @@
                     <!-- /.col -->
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
+                            <img src="<?php echo ASSET;?>img/dummyimg.png" alt="" />
                             <div class="caption">
                                 <h3><a href="#">Samsung Galaxy </a></h3>
                                 <p>Price : <strong>$ 3,45,900</strong>  </p>
@@ -56,7 +56,7 @@
                     <!-- /.col -->
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
+                            <img src="<?php echo ASSET;?>img/dummyimg.png" alt="" />
                             <div class="caption">
                                 <h3><a href="#">Samsung Galaxy </a></h3>
                                 <p>Price : <strong>$ 3,45,900</strong>  </p>
@@ -113,7 +113,7 @@
                 <div class="row">
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
+                            <img src="<?php echo ASSET;?>img/dummyimg.png" alt="" />
                             <div class="caption">
                                 <h3><a href="#">Samsung Galaxy </a></h3>
                                 <p>Price : <strong>$ 3,45,900</strong>  </p>
@@ -129,7 +129,7 @@
                     <!-- /.col -->
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
+                            <img src="<?php echo ASSET;?>img/dummyimg.png" alt="" />
                             <div class="caption">
                                 <h3><a href="#">Samsung Galaxy </a></h3>
                                 <p>Price : <strong>$ 3,45,900</strong>  </p>
@@ -142,7 +142,7 @@
                     <!-- /.col -->
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
+                            <img src="<?php echo ASSET;?>img/dummyimg.png" alt="" />
                             <div class="caption">
                                 <h3><a href="#">Samsung Galaxy </a></h3>
                                 <p>Price : <strong>$ 3,45,900</strong>  </p>

@@ -1,29 +1,14 @@
 <?php
-require_once '../../vendor/autoload.php';
+
+define('DIR', $_SERVER['DOCUMENT_ROOT']);
+require_once DIR . "/!ecommerce t/vendor/autoload.php";
 
 use App\classes\Contato;
 
+$email = $_POST['email'] ?? null;
+$nome = $_POST['nome'] ?? null;
+$mensagem = $_POST['mensagem'] ?? null;
 
-/*
-$a = ['status'=>'true', 'codigo_id'=>4567];
+$c = new Contato($email, $nome, $mensagem);
 
-echo json_encode($a);
-*/
-
-$c = new Contato();
-
-$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
-$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS);
-$mensagem = filter_input(INPUT_POST, 'mensagem', FILTER_SANITIZE_SPECIAL_CHARS);
-
-
-$c->setNome($nome)->setEmail($email)->setMensagem($mensagem);
-
-if($c->enviaBanco()){
-	$e = ['status'=>'true'];
-} else {
-	$e = ['status'=>'false'];
-	die();
-}
-
-echo json_encode($e);
+echo json_encode($c->enviaBanco());

@@ -17,26 +17,31 @@ class Contato implements IContato
 	private $db;
 
 
-	public function __construct(){
+	public function __construct($email, $nome, $mensagem){
 		$this->db = Conn::connect();
+
+
+		$this->nome = $nome;
+		$this->email = $email;
+		$this->mensagem = $mensagem;
 	}
 
 
 	public function enviaBanco(){
 
 		if(!$this->validaMensagem()){
-			echo json_encode(['msg'=>'Mensagem invalida']);
-			return false;
+			//echo ['status'=>false, 'msg'=>'Mensagem invalida'];
+			return ['status'=>false, 'msg'=>'Mensagem invalida'];
 		}
 
 		if(!$this->validaEmail()){
-			echo json_encode(['msg'=>'Email invalido']);
-			return false;
+			//echo ['status'=>false, 'msg'=>'Email invalido'];
+			return ['status'=>false, 'msg'=>'Email invalido'];
 		}
 
 		if(!$this->validaNome()){
-			echo json_encode(['msg'=>'Nome invalido.']);
-			return false;
+			//echo ['status'=>false, 'msg'=>'Nome invalido.'];
+			return ['status'=>false, 'msg'=>'Nome invalido.'];
 		}
 
 	
@@ -51,7 +56,8 @@ class Contato implements IContato
 		$resultado = $stmt->execute();
 
 		if($resultado){
-			return $this->db->lastInsertId();
+			$id =  $this->db->lastInsertId();
+			return ['status'=>true, 'msg'=>'Nome invalido.', 'id'=>$id];
 		} else {
 			$log = new Logger('CrudProduto');
 			$log->pushHandler(new StreamHandler('../log_contato/contato.log', Logger::WARNING));

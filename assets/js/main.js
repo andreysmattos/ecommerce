@@ -5,13 +5,14 @@ $(function(){
 
 		var contato = $.ajax({
 			method: 'post',
-			url: '../script/contato.php', //Preciso mudar esse endereço depois!
+			url: '/!ecommerce%20t/App/script/contato.php', //Preciso mudar esse endereço depois!
 			data: form,
 			dataType: 'json'
 		})
 
 
 		contato.done(function(e){
+			//console.log(e);
 			if(e.status){
 				$('#formulario').each(function(){
 					this.reset();

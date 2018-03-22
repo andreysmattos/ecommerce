@@ -39,6 +39,12 @@ CREATE TABLE `produto` (
 	references categoria_filho (idCategoriaFilho)
 );
 
+/* SELECT MENU */
+
+SELECT idCategoriaFilho, nome, 
+(SELECT count(*) FROM `produto` where `id_categoria_filho` =  idCategoriaFilho) as quantidade
+ FROM `categoria_filho` 
+WHERE ativo = 's' AND id_categoria_mae = 3
 
 /* INSERT categoria mae */
 
@@ -118,3 +124,6 @@ INSERT INTO `produto` (nome, preco, precoPromo, descricao, imagem, ativo, estoqu
 VALUES ('Chain Armor', 1, 0.5, 'banhado a ouro', 'sdsd', 's', 122, 7);
 INSERT INTO `produto` (nome, preco, precoPromo, descricao, imagem, ativo, estoque, id_categoria_filho)
 VALUES ('Plate Armor', 9, 7.35, 'Dropa de amazon', 'sdsd', 's', 88, 7);
+INSERT INTO `produto` (nome, preco, precoPromo, descricao, imagem, ativo, estoque, id_categoria_filho)
+VALUES ('Blue Robe', 1, 0.5, 'armadura azul', 'dasfdfds', 's', 95, 7);
+

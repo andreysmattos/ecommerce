@@ -23,7 +23,8 @@ class CrudProduto implements ICrudProduto
 	}
 
 
-	public function setProduto(IProduto $produto){
+	public function setProduto(IProduto $produto)
+	{
 		$this->produto = $produto;
 	}
 

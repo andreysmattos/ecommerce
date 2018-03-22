@@ -7,15 +7,16 @@
     <meta name="author" content="">
     <title>Bootstrap E-Commerce Template- DIGI Shop mini</title>
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="/App/html/assets/css/bootstrap.css" rel="stylesheet"> -->
+     <link href="<?php echo ASSET;?>css/bootstrap.css" rel="stylesheet">
     <!-- Fontawesome core CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="<?php echo ASSET;?>css/font-awesome.min.css" rel="stylesheet" />
     <!--GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!--Slide Show Css -->
-    <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet" />
+    <link href="<?php echo ASSET;?>ItemSlider/css/main-style.css" rel="stylesheet" />
     <!-- custom CSS here -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="<?php echo ASSET;?>css/style.css" rel="stylesheet" />
 
 
 </head>
@@ -58,13 +59,13 @@
     ?>
 
     <!--Core JavaScript file  -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="<?php echo ASSET;?>js/jquery-1.10.2.js"></script>
     <!--bootstrap JavaScript file  -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="<?php echo ASSET;?>js/bootstrap.js"></script>
     <!--Slider JavaScript file  -->
-    <script src="assets/ItemSlider/js/modernizr.custom.63321.js"></script>
-    <script src="assets/ItemSlider/js/jquery.catslider.js"></script>
-       <script src="assets/js/main.js"></script>
+    <script src="<?php echo ASSET;?>ItemSlider/js/modernizr.custom.63321.js"></script>
+    <script src="<?php echo ASSET;?>ItemSlider/js/jquery.catslider.js"></script>
+       <script src="<?php echo ASSET;?>js/main.js"></script>
     <script>
         $(function () {
 
