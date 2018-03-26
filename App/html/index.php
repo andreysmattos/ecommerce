@@ -12,7 +12,7 @@
     <!-- Fontawesome core CSS -->
     <link href="<?php echo ASSET;?>css/font-awesome.min.css" rel="stylesheet" />
     <!--GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='<?php echo ASSET;?>css/Open_Sans.css' rel='stylesheet' type='text/css'>
     <!--Slide Show Css -->
     <link href="<?php echo ASSET;?>ItemSlider/css/main-style.css" rel="stylesheet" />
     <!-- custom CSS here -->

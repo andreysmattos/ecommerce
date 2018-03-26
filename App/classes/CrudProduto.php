@@ -197,7 +197,7 @@ class CrudProduto implements ICrudProduto
 		if($resultado){
 			return $resultado;
 		} else {
-		$log = new Logger('CrudProduto');
+			$log = new Logger('CrudProduto');
 			$log->pushHandler(new StreamHandler('../log_produtos/crud.log', Logger::WARNING));
 
 			
@@ -205,7 +205,5 @@ class CrudProduto implements ICrudProduto
 			$log->error('Error no metodo delete(), verifique o erro: ' . $stmt->errorInfo()[2]);
 		}
 	}
-
-
 
 }

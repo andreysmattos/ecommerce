@@ -4,7 +4,8 @@ define('DIR', $_SERVER['DOCUMENT_ROOT']);
 require_once DIR . "/!ecommerce t/vendor/autoload.php";
 
 
-$c = new App\classes\Categoria();
-$menu = $c->menu_esquerda();
+use App\classes\Administrativo;
 
-//print_r($menu);
+
+
+echo json_encode($resultado);

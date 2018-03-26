@@ -17,7 +17,7 @@ class Route
 
 	public function initRoutes(){
 		$routes['home'] = array('route'=>'/!ecommerce%20t/public/', 'arq'=>'index.php');
-		$routes['trabalhista'] = array('route'=>'/trabalhista', 'arq'=>'trabalhista.php');
+		$routes['adm'] = array('route'=>'/!ecommerce%20t/public/admin', 'arq'=>'/admin/index.php');
 		$this->setRoutes($routes);
 	}
 

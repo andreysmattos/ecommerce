@@ -1,3 +1,16 @@
+.cad {
+  margin-top: 36px;
+}
+
+.titulo_adm{
+  margin-bottom: 10%;
+}
+
+
+.input_direita {
+  text-align:right;
+}
+
 .nav-side-menu {
   overflow: auto;
   font-family: verdana;

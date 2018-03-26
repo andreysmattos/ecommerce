@@ -2,7 +2,7 @@
 
 <?php
 
-include '../script/lista_produtos.php';
+include SCRIPT . 'lista_produtos.php';
 
 ?>
 
